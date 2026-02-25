@@ -2,43 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Improved Search Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Search Items</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="hero-section">
-        <h1>Welcome to Our Search Page!</h1>
-        <p>Discover the best results in a flash.</p>
-        <form action="#" method="GET" class="search-form">
-          <input type="text" placeholder="Search..." required />
-          <button type="submit">Search</button>
-        </form>
-      </div>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="submit.html">Submit Item</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="grid-items">
-        <div class="item">
-          <span class="status-badge">✅</span>
-          <h2>Item 1</h2>
-          <p>Description for item 1</p>
-        </div>
-        <div class="item">
-          <span class="status-badge">🔍</span>
-          <h2>Item 2</h2>
-          <p>Description for item 2</p>
-        </div>
-        <div class="item">
-          <span class="status-badge">⚠️</span>
-          <h2>Item 3</h2>
-          <p>Description for item 3</p>
-        </div>
-        <!-- Add more items as needed -->
+
+    <main class="content">
+      <h2>Search Items</h2>
+
+      <form action="https://httpbin.org/get" method="GET" class="form">
+        <input type="text" name="keyword" placeholder="Keyword" />
+        <select name="category">
+          <option>All</option>
+          <option>Electronics</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+
+      <section class="grid">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+        <div class="grid-item">Item 9</div>
+        <div class="grid-item">Item 10</div>
+        <div class="grid-item">Item 11</div>
+        <div class="grid-item">Item 12</div>
+        <div class="grid-item">Item 13</div>
+        <div class="grid-item">Item 14</div>
+        <div class="grid-item">Item 15</div>
       </section>
+      <h2>Lost & Found Statistics</h2>
+
+      <table class="stats-table">
+        <tr>
+          <th rowspan="2">Category</th>
+          <th colspan="2">Items</th>
+          <th rowspan="2">Most Lost Location</th>
+        </tr>
+        <tr>
+          <th>Lost</th>
+          <th>Found</th>
+        </tr>
+        <tr>
+          <td>Electronics</td>
+          <td>12</td>
+          <td>7</td>
+          <td>Library</td>
+        </tr>
+        <tr>
+          <td>Books</td>
+          <td>9</td>
+          <td>5</td>
+          <td>Classrooms</td>
+        </tr>
+        <tr>
+          <td>Clothing</td>
+          <td>6</td>
+          <td>4</td>
+          <td>Dorms</td>
+        </tr>
+      </table>
     </main>
+
     <footer>
-      <p>&copy; 2026 Your Company Name</p>
+      <p>© 2026 Lost & Found Campus Manouba</p>
     </footer>
   </body>
 </html>
