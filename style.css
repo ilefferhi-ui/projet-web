@@ -1,9 +1,3 @@
-.content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -193,4 +187,87 @@ footer {
 
 .stats-table tr:nth-child(even) {
   background-color: #e3e3e3;
+}
+/* Remove default spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background image */
+  background: url("your-image.jpg") center/cover no-repeat;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Optional dark overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Content stays centered and limited width */
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Text styling */
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #ff6e40;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff3d00;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: white;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
 }
