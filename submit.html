@@ -1,70 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Submit Item</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header>
-    <img src="images/logo.png" alt="Logo" class="logo">
-    <nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="submit.html">Submit Item</a></li>
-            <li><a href="search.html">Search</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="submit.html">Submit Item</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main class="content">
-    <h2 style="color:#0a3d62;">Submit Lost or Found Item</h2> <!-- INLINE CSS -->
+    <main class="content">
+      <h2 style="color: #0a3d62">Submit Lost or Found Item</h2>
+      <!-- INLINE CSS -->
 
-    <form action="https://httpbin.org/post" method="POST" class="form">
-
+      <form action="https://httpbin.org/post" method="POST" class="form">
         <label>Item Name</label>
-        <input type="text" name="item_name" required>
+        <input type="text" name="item_name" required />
 
         <label>Description</label>
         <textarea name="description"></textarea>
 
         <label>Category</label>
         <select name="category">
-            <option>Electronics</option>
-            <option>Books</option>
-            <option>Clothing</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Clothing</option>
         </select>
 
         <label>Location</label>
-        <input type="text" name="location">
+        <input type="text" name="location" />
 
         <label>Date</label>
-        <input type="date" name="date">
+        <input type="date" name="date" />
 
         <label>Status</label>
-        <input type="radio" name="status" value="lost"> Lost
-        <input type="radio" name="status" value="found"> Found
+        <input type="radio" name="status" value="lost" /> Lost
+        <input type="radio" name="status" value="found" /> Found
 
         <label>
-            <input type="checkbox" name="reward"> Reward available
+          <input type="checkbox" name="reward" /> Reward available
         </label>
 
         <label>Upload photo</label>
-        <input type="file">
+        <input type="file" />
 
         <label>Email</label>
-        <input type="email" name="email">
+        <input type="email" name="email" />
 
         <button type="submit">Submit</button>
-    </form>
-</main>
+      </form>
+    </main>
 
-<footer>
-    <p>© 2026 Lost & Found Campus Manouba</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026 Lost & Found Campus Manouba</p>
+    </footer>
+  </body>
 </html>

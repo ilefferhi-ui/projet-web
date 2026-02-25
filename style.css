@@ -4,9 +4,9 @@
 
 /* ELEMENT selector */
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f6fa;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f6fa;
 }
 
 /* ===============================
@@ -14,50 +14,50 @@ body {
 ================================ */
 
 header {
-    display: flex;                 /* FLEXBOX */
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0a3d62;
-    padding: 10px 20px;
+  display: flex; /* FLEXBOX */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a3d62;
+  padding: 10px 20px;
 }
 
 .logo {
-    width: 60px;
+  width: 60px;
 }
 
 /* DESCENDANT selector */
 nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 /* LINK STATES */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    cursor: pointer;              /* CURSOR */
-    transition: background 0.3s;  /* TRANSITION */
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  cursor: pointer; /* CURSOR */
+  transition: background 0.3s; /* TRANSITION */
 }
 
 /* PSEUDO-CLASS selector */
 nav ul li a:hover {
-    background-color: #1e90ff;
-    border-radius: 5px;
+  background-color: #1e90ff;
+  border-radius: 5px;
 }
 
 nav ul li a:active {
-    background-color: #0c2461;
+  background-color: #0c2461;
 }
 
 nav ul li a:visited {
-    color: #dcdde1;
+  color: #dcdde1;
 }
 
 /* ===============================
@@ -65,7 +65,7 @@ nav ul li a:visited {
 ================================ */
 
 .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* ===============================
@@ -73,17 +73,17 @@ nav ul li a:visited {
 ================================ */
 
 .cards {
-    display: flex;                 /* FLEXBOX */
-    gap: 15px;
-    margin-top: 20px;
+  display: flex; /* FLEXBOX */
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .card {
-    background-color: #dff9fb;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    text-align: center;
+  background-color: #dff9fb;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
 }
 
 /* ===============================
@@ -94,26 +94,26 @@ nav ul li a:visited {
 .form input,
 .form select,
 .form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 /* ATTRIBUTE selector */
 input[type="radio"],
 input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
+  width: auto;
+  margin-right: 5px;
 }
 
 .form button {
-    background-color: #0a3d62;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* ===============================
@@ -121,24 +121,24 @@ input[type="checkbox"] {
 ================================ */
 
 .grid {
-    display: grid;                                /* GRID */
-    grid-template-columns: repeat(5, 1fr);       /* 5 columns */
-    grid-template-rows: repeat(3, auto);         /* 3 rows */
-    gap: 10px;
-    margin-top: 20px;
+  display: grid; /* GRID */
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .grid-item {
-    background-color: #c7ecee;
-    padding: 15px;
-    text-align: center;
-    border-radius: 5px;
-    transition: transform 0.3s;                  /* TRANSITION */
+  background-color: #c7ecee;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.3s; /* TRANSITION */
 }
 
 /* HOVER + TRANSFORM */
 .grid-item:hover {
-    transform: scale(1.05);                      /* TRANSFORM */
+  transform: scale(1.05); /* TRANSFORM */
 }
 
 /* ===============================
@@ -146,13 +146,13 @@ input[type="checkbox"] {
 ================================ */
 
 footer {
-    background-color: #0a3d62;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;                          /* POSITION */
-    bottom: 0;
-    width: 100%;
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* POSITION */
+  bottom: 0;
+  width: 100%;
 }
 
 /* ===============================
@@ -160,36 +160,36 @@ footer {
 ================================ */
 
 @media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-    }
+  .cards {
+    flex-direction: column;
+  }
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* ===============================
    TABLE STYLING
 ================================ */
 
 .stats-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .stats-table th,
 .stats-table td {
-    border: 1px solid #0a3d62;
-    padding: 10px;               /* PADDING */
-    text-align: center;
+  border: 1px solid #0a3d62;
+  padding: 10px; /* PADDING */
+  text-align: center;
 }
 
 .stats-table th {
-    background-color: #0a3d62;
-    color: white;
+  background-color: #0a3d62;
+  color: white;
 }
 
 .stats-table tr:nth-child(even) {
-    background-color: #f1f2f6;
+  background-color: #f1f2f6;
 }
