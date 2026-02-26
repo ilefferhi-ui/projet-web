@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -13,7 +13,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="submit.html">Submit Item</a></li>
           <li><a href="search.html">Search</a></li>
-          </li><a href="rules.html">Rules</a><li>
+          <li><a href="rules.html">Rules</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -23,10 +23,22 @@
     <main class="content">
       <h2>Contact Us</h2>
 
-      <form action="https://httpbin.org/post" method="POST" class="form">
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
-        <textarea name="message" placeholder="Message"></textarea>
+      <!-- MAILTO FORM -->
+      <form
+        action="mailto:ilef.ferhi@ensi-uma.tn"
+        method="POST"
+        enctype="text/plain"
+        class="form"
+      >
+        <label>Your Name</label>
+        <input type="text" name="name" required />
+
+        <label>Your Email</label>
+        <input type="email" name="email" required />
+
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+
         <button type="submit">Send</button>
       </form>
     </main>
