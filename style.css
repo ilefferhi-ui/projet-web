@@ -403,6 +403,10 @@ body {
 .btn-secondary:hover {
   background-color: #ddd;
 }
+a:hover {
+  cursor: crosshair; 
+}
+
 
 
 
