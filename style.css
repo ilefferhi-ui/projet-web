@@ -190,7 +190,7 @@ footer {
 .stats-table tr:nth-child(even) {
   background-color: #e3e3e3;
 }
-======= .hero-section {
+.hero-section {
   background-color: #f5f5f5;
   padding: 50px 20px;
   text-align: center;
@@ -403,4 +403,5 @@ body {
 .btn-secondary:hover {
   background-color: #ddd;
 }
+
 
