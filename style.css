@@ -404,8 +404,9 @@ body {
   background-color: #ddd;
 }
 a:hover {
-  cursor: crosshair; 
+  cursor: grab; 
 }
+
 
 
 
