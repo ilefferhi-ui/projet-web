@@ -41,7 +41,13 @@ nav ul li a {
   transition: background 0.3s; /* TRANSITION */
 }
 
-/* PSEUDO-CLASS selector */
+/* PSEUDO-CLASS selectors */
+nav ul li a,
+nav ul li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 nav ul li a:hover {
   background-color: #264c6a;
   border-radius: 5px;
@@ -49,10 +55,6 @@ nav ul li a:hover {
 
 nav ul li a:active {
   background-color: #456882;
-}
-
-nav ul li a:visited {
-  color: #dcdde1;
 }
 
 /* ===============================
@@ -296,10 +298,7 @@ button {
 button:hover {
   background-color: #0056b3;
 }
->>>>>>> Stashed changes
-/* ===============================
-   TABLE STYLING
-================================ */
+
 
 .stats-table {
   width: 100%;
@@ -404,3 +403,4 @@ body {
 .btn-secondary:hover {
   background-color: #ddd;
 }
+
