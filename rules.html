@@ -51,6 +51,48 @@
                 <li>Arrange item return safely and responsibly.</li>
             </ul>
         </section>
+        <section>
+  <h2>5. Report a Violation</h2>
+  <p>If you witnessed a rule violation or have a concern, please fill out the form below.</p>
+
+  <form action="https://httpbin.org/get" method="GET" class="form">
+
+    <label>Your Name</label>
+    <input type="text" name="name" placeholder="Enter your name" required />
+
+    <label>Your Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required />
+
+    <label>Type of Violation</label>
+    <select name="violation_type">
+      <option>Fake Report</option>
+      <option>Inappropriate Language</option>
+      <option>Suspicious Activity</option>
+      <option>Other</option>
+    </select>
+
+    <label>Date of Incident</label>
+    <input type="date" name="date" />
+
+    <label>Location</label>
+    <input type="text" name="location" placeholder="Where did it happen?" />
+
+    <label>Description</label>
+    <textarea name="description" placeholder="Describe the violation in detail..." rows="5"></textarea>
+
+    <label>Severity</label><br>
+    <input type="radio" name="severity" value="low" /> Low &nbsp;
+    <input type="radio" name="severity" value="medium" /> Medium &nbsp;
+    <input type="radio" name="severity" value="high" /> High <br><br>
+
+    <label>
+      <input type="checkbox" name="anonymous" /> Submit anonymously
+    </label>
+
+    <button type="submit">Submit Report</button>
+
+  </form>
+</section>
 
         <section>
             <h2>4. Privacy & Safety</h2>
